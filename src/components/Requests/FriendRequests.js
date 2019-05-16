@@ -82,7 +82,7 @@ class FriendRequests extends Component {
         <div className="col-lg-6">
           <h2 className="mb-5" style={{fontWeight: 'bold'}}>Friend Requests</h2>
             {
-              friendRequests.length == 0 ?
+              friendRequests.length === 0 ?
               <p>No friend requests</p> :                           
               <ListGroup>{friendList}</ListGroup>                        
             }
@@ -91,7 +91,7 @@ class FriendRequests extends Component {
         <div className="col-lg-6">
           <h2 className="mb-5" style={{fontWeight: 'bold'}}>Pending Requests</h2>
             {
-              pendingRequests.length == 0 ?
+              pendingRequests.length === 0 ?
               <p>No pending requests</p> :              
               <ListGroup>{pendingList}</ListGroup>
             }
