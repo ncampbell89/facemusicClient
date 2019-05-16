@@ -67,7 +67,6 @@ export default (state = initialState, action) => {
 
 
         case SPOTIFY:
-            console.log(action)
             updated.spotifyGenres = action.payload;
             return updated;
 
