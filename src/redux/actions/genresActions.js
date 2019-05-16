@@ -142,14 +142,12 @@ export const chosenspotifylist = () => dispatch => {
 }
 
 export const playlist = (catID) => dispatch => {
-    console.log(catID)
     const spotifyBearerToken = localStorage.getItem('spotifyBearerToken');
 
     let axiosConfig = {
         headers: {
             'Accept': 'application/json',
-            'Authorization': `Bearer ${spotifyBearerToken}`,
-            'X-Content-Type-Options': 'nosniff'
+            'Authorization': `Bearer ${spotifyBearerToken}`
         }                               
     }
 
