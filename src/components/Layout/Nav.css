@@ -90,7 +90,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
     .btnPosition {
         position: absolute;
         right: 15px;
