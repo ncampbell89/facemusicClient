@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width: 346px) {
+@media (max-width: 375px) {
     .content h1 {
         font-size: 2.5em;
     }

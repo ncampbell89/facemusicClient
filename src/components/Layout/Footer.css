@@ -5,7 +5,7 @@
     }
 }
 
-@media (max-width: 346px) {
+@media (max-width: 375px) {
     .footerList {
         font-size: 0.6em;
         padding: 0;

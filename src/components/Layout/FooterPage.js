@@ -3,16 +3,11 @@ import { MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import './Footer.css';
 
 class FooterPage extends Component {
-  // componentDidMount() {
-  //   if(window.location.href === '/requests') {
-  //     console.log('requests')
-  //   }
-  // }
+  
   render() {
     let footer;
 
     if(window.location.href === 'http://localhost:3000/requests') {
-      console.log('requests')
       footer = (
         <MDBFooter className="font-small w-100 p-3 bg-dark" style={{position: 'absolute', bottom: '0'}}>
           <MDBContainer fluid className="text-center align-middle text-md-left">
