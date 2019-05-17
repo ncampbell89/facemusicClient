@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import './Footer.css';
 
 class FooterPage extends Component {
   // componentDidMount() {
@@ -17,7 +18,7 @@ class FooterPage extends Component {
           <MDBContainer fluid className="text-center align-middle text-md-left">
             <MDBRow style={{display: 'flex', justifyContent: 'center'}}>
     
-                <ul style={{ display: 'flex' }}>
+                <ul style={{ display: 'flex' }} className="footerList">
                   <li className="list-unstyled">
                     <a href="#!">Support</a>
                   </li>
@@ -29,7 +30,7 @@ class FooterPage extends Component {
                   </li>
                 </ul>
     
-                <div className="ml-5" style={{color: '#FFF'}}>
+                <div className="ml-5" style={{color: '#FFF'}} className="footerList">
                   Copyright &nbsp; &copy; {new Date().getFullYear()}
                 </div>
     

@@ -78,7 +78,7 @@ class Navclass extends Component {
                     <div className="nav_subtitle">Where harmony brings people together</div>
                 </Navbar.Brand>
     
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className="btnPosition" />
     
                 <Navbar.Collapse id="basic-navbar-nav">
     
