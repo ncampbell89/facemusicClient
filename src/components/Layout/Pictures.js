@@ -75,7 +75,7 @@ class Pictures extends Component {
   timeoutError = () => {
     setTimeout(() => {
       window.location.reload('/pictures')
-    }, 2000)
+    }, 100000)
   }
 
   render() {

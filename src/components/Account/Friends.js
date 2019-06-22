@@ -27,7 +27,7 @@ class Friends extends Component {
         friendList = (
           friends.map((friend, index) => {
 
-            for(let i = 0; i < allUsers.length; i++) {
+            for(let i = 0; i < allUsers.length; i++) { // O(n)
               if(allUsers[i].name === friend.name) {
                 friend.spotifyID = allUsers[i].spotifyID
               }
