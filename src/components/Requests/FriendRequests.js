@@ -3,6 +3,7 @@ import { ListGroup, Button } from 'react-bootstrap'
 import { allFriendRequestsApi, allPendingRequestsApi, 
   friendsApi, declinedApi, cancelRequestApi } from '../../redux/actions/authActions'
 import { connect } from 'react-redux'
+import jwt_decode from 'jwt-decode'
 // import io from "socket.io-client"
 import './requests.css'
 
@@ -15,8 +16,8 @@ class FriendRequests extends Component {
     this.props.allPendingRequestsApi()
   }
 
-  acceptedRequest = (id, name) => {
-    this.props.friendsApi(id, name)
+  acceptedRequest = (id, name, userID) => {
+    this.props.friendsApi(id, name, userID)
     this.props.allFriendRequestsApi(id)
   }
 
@@ -29,10 +30,11 @@ class FriendRequests extends Component {
   }
 
   render() {
-    console.log(this.props)
+
     let { friendRequests, pendingRequests } = this.props.user
 
     let friendList = friendRequests.map((item, index) => {
+      console.log(item)
       return (
         <ListGroup.Item key={index}>
           <p>
@@ -43,7 +45,7 @@ class FriendRequests extends Component {
           <div style={{display: 'flex'}}>
               <Button 
                 className="btn btn-success" 
-                onClick={this.acceptedRequest.bind(this, item._id, item.name)}
+                onClick={this.acceptedRequest.bind(this, item._id, item.name, item.spotify_id)}
               >
               Accept
               </Button>

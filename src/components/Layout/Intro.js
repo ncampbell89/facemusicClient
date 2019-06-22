@@ -78,7 +78,7 @@ class Intro extends Component {
                     </p>
 
                     <p>
-                      <b>Coming Soon:</b> Messaging, setting profile picture, and photo filter effects
+                      <b>Coming Soon:</b> Messaging, setting likes, and photo filter effects
                     </p>
                   </div>
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { LOCATION_HREF } from './config';
 import './Footer.css';
 
 class FooterPage extends Component {
@@ -7,7 +8,7 @@ class FooterPage extends Component {
   render() {
     let footer;
 
-    if(window.location.href === 'http://localhost:3000/requests') {
+    if(window.location.href === `${LOCATION_HREF}/requests`) {
       footer = (
         <MDBFooter className="font-small w-100 p-3 bg-dark" style={{position: 'absolute', bottom: '0'}}>
           <MDBContainer fluid className="text-center align-middle text-md-left">
@@ -24,7 +25,7 @@ class FooterPage extends Component {
                     <a href="#!">Settings</a>
                   </li>
                 </ul>
-    
+                &ensp;
                 <div className="ml-5" style={{color: '#FFF'}} className="footerList">
                   Copyright &nbsp; &copy; {new Date().getFullYear()}
                 </div>
@@ -50,7 +51,7 @@ class FooterPage extends Component {
                     <a href="#!">Settings</a>
                   </li>
                 </ul>
-
+                &ensp;
                 <div className="ml-5" style={{color: '#FFF'}}>
                   Copyright &nbsp; &copy; {new Date().getFullYear()}
                 </div>

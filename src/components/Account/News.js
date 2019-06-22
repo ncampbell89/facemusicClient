@@ -22,7 +22,7 @@ class News extends Component {
 
     shareArticle = (id, item) => {
         this.props.history.push('/newsfeed')
-        // window.location.href = '/newsfeed'
+        window.location.href = '/newsfeed'
         this.props.addPostApi(id, item)
     }
 
