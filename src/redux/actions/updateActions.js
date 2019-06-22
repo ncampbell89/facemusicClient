@@ -160,11 +160,13 @@ export const addPictureApi = (event) => dispatch => {
                 type: ADD_PIC,
                 payload: result.data
             })
+            console.log(result)
         })
-        .catch(() => {
+        .catch((err) => {
             dispatch({
                 type: ADD_PIC_ERROR
             })
+            console.log(JSON.stringify(err))
         })
         
     })
