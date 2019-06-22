@@ -300,7 +300,7 @@ export const addComment = (comm, id) => dispatch => {
 
         Axios.post(`/updates/comments`, newComment, axiosConfig)
         .then(result => {
-            console.log(result)
+            
             dispatch({
                 type: COMMENTS,
                 id,
