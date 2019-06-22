@@ -46,6 +46,7 @@ class Posts extends Component {
     if(user_id !== identification) {
       allPosts = (
         userPosts.map((item, index) => {
+          console.log(item)
           return (
             <PostList key={item._id} item={item} />
           )
@@ -54,6 +55,7 @@ class Posts extends Component {
     } else {
       allPosts = (
         posts.map((item, index) => {
+          console.log(item)
           return (
             <PostList key={item._id} item={item} />
           )

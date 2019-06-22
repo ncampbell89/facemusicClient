@@ -60,6 +60,7 @@ class PostList extends Component {
 
       idArr.push(this.props.item._id)   
       this.props.postsForNewsfeed(this.props.item._id)
+      console.log(this.props.item)
     }
  
     editButton = (id) => {

@@ -20,7 +20,10 @@ class InGenreList extends Component {
 
   sharePlaylist = (id, item, playlist) => {
     this.props.addPostApi(id, item, playlist)
-    window.location.href = "/newsfeed" 
+    
+    setTimeout(() => {
+      window.location.reload('/newsfeed')
+    }, 1000)
   }
 
   render() {
