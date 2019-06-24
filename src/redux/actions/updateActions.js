@@ -155,7 +155,7 @@ export const addPictureApi = (event) => dispatch => {
             url: resp.data.secure_url
         }
 
-        Axios.post(`/updates/addpic/${decoded.id}`, newPic)
+        Axios.post(`/updates/addpic/${decoded.id}`, newPic, axiosConfig)
         .then(result => {
             dispatch({
                 type: ADD_PIC,
