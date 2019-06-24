@@ -142,6 +142,7 @@ export const addPictureApi = (event) => dispatch => {
       data: formData
     })
     .then(resp => {
+        console.log(resp)
         let axiosConfig = {
             headers: {
                 'Content-Type': 'application/json;charset=UTF-8',
@@ -153,7 +154,7 @@ export const addPictureApi = (event) => dispatch => {
             id: decoded.id,
             url: resp.data.secure_url
         }
-
+        console.log(newPic)
         Axios.post(`/updates/addpic/${decoded.id}`, newPic, axiosConfig)
         .then(result => {
             dispatch({
