@@ -50,6 +50,8 @@ export const getAllPosts = () => dispatch => {
     const decoded = jwt_decode(token)
     setAuthJWT(token);
 
+    console.log('Bearer' + token)
+
     Axios.get(`/updates/allposts/${decoded.id}`)
     .then(result => {
         dispatch({
@@ -154,9 +156,12 @@ export const addPictureApi = (event) => dispatch => {
             id: decoded.id,
             url: resp.data.secure_url
         }
-
+        console.log('pre-Axios-addpic');
+        
         Axios.post(`/updates/addpic/${decoded.id}`, newPic, axiosConfig)
         .then(result => {
+            console.log('results!!');
+            
             dispatch({
                 type: ADD_PIC,
                 payload: result.data
@@ -194,9 +199,12 @@ export const deletePictureApi = (id) => dispatch => {
 export const allPicturesApi = () => dispatch => {
     const token = localStorage.getItem('jwtToken');
     const decoded = jwt_decode(token);
+    console.log('decoded-id: ', decoded.id);
+    
 
     Axios.get(`/updates/allpics/${decoded.id}`)
     .then(result => {
+        console.log(result)
         dispatch({
             type: ALL_PICS,
             payload: result.data
