@@ -29,7 +29,6 @@ import jwt_decode from 'jwt-decode';
 import setAuthJWT from './Axios/setAuthJWT';
 import Axios from './Axios/Axios';
 import axios from 'axios';
-import { API_KEY, API_SECRET, CLOUD_NAME } from './config';
 
 export const postsForNewsfeed = () => dispatch => {
     Axios.get(`/updates/newsfeed`)
@@ -135,7 +134,7 @@ export const addPictureApi = (event) => dispatch => {
     formData.append('upload_preset', 'wgu7exst');
 
     axios({
-      url: `https://${API_KEY}:${API_SECRET}@api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
+      url: `https://${process.env.API_KEY}:${process.env.API_SECRET}@api.cloudinary.com/v1_1/${process.env.CLOUD_NAME}/image/upload`,
       method: 'POST',
       headers: {
         'Content-Type': 'applcation/x-www-form-urlencoded',
