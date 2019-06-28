@@ -41,7 +41,6 @@ class App extends Component {
                 <Route exact path="/news" component={News} />
                 <Route exact path="/genrelist" component={Genres} />
                 <Route exact path="/profile/:id" component={Profile} />
-                {/* <Route exact path="/friend/:id" component={FriendsProfile} /> */}
                 <Route exact path="/ingenre/:id" component={InGenre} />
                 <Route exact path="/requests" component={FriendRequests} />
                 <Route exact path="/messages" component={Messages} />
