@@ -7,7 +7,7 @@ class FooterPage extends Component {
   render() {
     let footer;
 
-    if(window.location.href === `https://musing-lamport-e5b378.netlify.com/requests`) {
+    if(window.location.href === `/requests`) {
       footer = (
         <MDBFooter className="font-small w-100 p-3 bg-dark" style={{position: 'absolute', bottom: '0'}}>
           <MDBContainer fluid className="text-center align-middle text-md-left">
