@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Axios = axios.create({
-    baseURL: 'http://practical-fermat-c9cbd0.netlify.com',
+    baseURL: 'https://facemusicserver.herokuapp.com',
     timeout: 3600000 // 1 hour
 });
 
