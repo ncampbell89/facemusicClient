@@ -159,7 +159,7 @@ export const addPictureApi = (event) => dispatch => {
 
         console.log('pre-Axios-addpic');
         
-        Axios.post(`/updates/addpic/${decoded.id}`, newPic, axiosConfig)
+        axios.post(`http://facemusicserver.herokuapp.com/updates/addpic/${decoded.id}`, newPic, axiosConfig)
         .then(result => {         
             dispatch({
                 type: ADD_PIC,
@@ -184,7 +184,7 @@ export const deletePictureApi = (id) => dispatch => {
     const decoded = jwt_decode(token);
     setAuthJWT(token)
 
-    Axios.delete(`/updates/deletepic/${decoded.id}?picture=${id}&_method=DELETE`)
+    axios.delete(`http://facemusicserver.herokuapp.com/updates/deletepic/${decoded.id}?picture=${id}&_method=DELETE`)
     .then(result => {
         dispatch({
             type: DELETE_PIC,
@@ -201,7 +201,7 @@ export const allPicturesApi = () => dispatch => {
     console.log('decoded-id: ', decoded.id);
     
 
-    Axios.get(`/updates/allpics/${decoded.id}`)
+    axios.get(`http://facemusicserver.herokuapp.com/updates/allpics/${decoded.id}`)
     .then(result => {
         console.log(result)
         dispatch({
