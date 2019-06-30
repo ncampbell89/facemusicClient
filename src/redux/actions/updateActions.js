@@ -158,7 +158,7 @@ export const addPictureApi = (event) => dispatch => {
         }
         console.log('pre-Axios-addpic');
         
-        Axios.post(`/updates/addpic/${decoded.id}`, newPic, axiosConfig)
+        axios.post(`https://www.facespotifymusic.com/updates/addpic/${decoded.id}`, newPic, axiosConfig)
         .then(result => {         
             dispatch({
                 type: ADD_PIC,
