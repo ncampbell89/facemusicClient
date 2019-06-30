@@ -134,7 +134,7 @@ export const addPictureApi = (event) => dispatch => {
     formData.append('upload_preset', 'wgu7exst');
 
     axios({
-      url: `https://${process.env.API_KEY}:${process.env.API_SECRET}@api.cloudinary.com/v1_1/${process.env.CLOUD_NAME}/image/upload`,
+      url: `https://886333948518453:gLiY9jSuWl4wn0AlXlS8vgDI_-s@api.cloudinary.com/v1_1/dzvtygifz/image/upload`,
       method: 'POST',
       headers: {
         'Content-Type': 'applcation/x-www-form-urlencoded',
