@@ -24,7 +24,7 @@ class FooterPage extends Component {
                     <a href="#!">Settings</a>
                   </li>
                 </ul>
-                &ensp;
+                &emsp; &emsp;
                 <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" 
                   target="_blank" href="https://www.copyrighted.com/website/XGdESQN8ZZWbHUaJ">
                     <img alt="Copyrighted.com Registered &amp; Protected" 
@@ -56,7 +56,7 @@ class FooterPage extends Component {
                     <a href="#!">Settings</a>
                   </li>
                 </ul>
-                &ensp;
+                &emsp; &emsp;
                 <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" 
                   target="_blank" href="https://www.copyrighted.com/website/XGdESQN8ZZWbHUaJ">
                     <img alt="Copyrighted.com Registered &amp; Protected" 
