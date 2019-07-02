@@ -16,7 +16,6 @@ import Pictures from './components/Layout/Pictures';
 import PeopleSearch from './components/Account/PeopleSearch';
 import DeletePic from './components/Layout/DeletePic';
 import Friends from './components/Account/Friends';
-import Copyrighted from './coprighted';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -48,7 +47,6 @@ class App extends Component {
                 <Route exact path="/search" component={PeopleSearch} />
                 <Route exact path="/deletepic" component={DeletePic} />
                 <Route exact path="/friends" component={Friends} />
-                <Route exact path="/copyrighted-f3a9338c5bc7bc52" component={Copyrighted} />
               </Switch>
 
               <FooterPage />
