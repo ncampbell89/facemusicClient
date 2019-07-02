@@ -25,9 +25,15 @@ class FooterPage extends Component {
                   </li>
                 </ul>
                 &ensp;
-                <div className="ml-5" style={{color: '#FFF'}} className="footerList">
-                  Copyright &nbsp; &copy; {new Date().getFullYear()}
-                </div>
+                <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" 
+                  target="_blank" href="https://www.copyrighted.com/website/XGdESQN8ZZWbHUaJ">
+                    <img alt="Copyrighted.com Registered &amp; Protected" 
+                        border="0" width="125" height="25" 
+                        srcset="https://static.copyrighted.com/badges/125x25/03_1_2x.png 2x" 
+                        src="https://static.copyrighted.com/badges/125x25/03_1.png" />
+                </a>
+                {new Date().getFullYear()}
+                <script src="https://static.copyrighted.com/badges/helper.js"></script>
     
             </MDBRow>
           </MDBContainer>
@@ -51,9 +57,15 @@ class FooterPage extends Component {
                   </li>
                 </ul>
                 &ensp;
-                <div className="ml-5" style={{color: '#FFF'}}>
-                  Copyright &nbsp; &copy; {new Date().getFullYear()}
-                </div>
+                <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" 
+                  target="_blank" href="https://www.copyrighted.com/website/XGdESQN8ZZWbHUaJ">
+                    <img alt="Copyrighted.com Registered &amp; Protected" 
+                        border="0" width="125" height="25" 
+                        srcset="https://static.copyrighted.com/badges/125x25/03_1_2x.png 2x" 
+                        src="https://static.copyrighted.com/badges/125x25/03_1.png" />
+                </a>
+                {new Date().getFullYear()}
+                <script src="https://static.copyrighted.com/badges/helper.js"></script>
 
             </MDBRow>
           </MDBContainer>
